@@ -32,8 +32,8 @@ export const config = {
   publicUrl: process.env.PUBLIC_URL || 'https://whatshells-api.onrender.com',
   frontendUrl: process.env.FRONTEND_URL || 'https://landingpage-snowy-six.vercel.app',
   razorpay: {
-    keyId: process.env.RAZORPAY_KEY_ID || '',
-    keySecret: process.env.RAZORPAY_KEY_SECRET || '',
+    keyId: process.env.RAZORPAY_KEY_ID || process.env.LIVE_API_KEY || 'rzp_live_Td7ENAtEmIIIlu',
+    keySecret: process.env.RAZORPAY_KEY_SECRET || process.env.LIVE_SECRET_KEY || 'BQOduEgFPbxdpT5hvgGfq3L2',
     webhookSecret: process.env.RAZORPAY_WEBHOOK_SECRET || 'whatshells_rzp_secret_2026',
   },
   razorpayMeLink: process.env.RAZORPAY_ME_LINK || 'https://razorpay.me/@navaneethakrishnanm',
