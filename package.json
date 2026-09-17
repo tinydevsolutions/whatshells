@@ -1,0 +1,17 @@
+{
+  "name": "whatshell",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -n \"API,CLIENT\" -c \"blue.bold,magenta.bold\" \"npm run start --prefix store_api\" \"npm run dev --prefix landing_page\"",
+    "dev": "concurrently -n \"API,CLIENT\" -c \"blue.bold,magenta.bold\" \"npm run dev --prefix store_api\" \"npm run dev --prefix landing_page\"",
+    "dev:api": "npm run dev --prefix store_api",
+    "dev:client": "npm run dev --prefix landing_page",
+    "start:api": "npm run start --prefix store_api",
+    "start:client": "npm run dev --prefix landing_page",
+    "build:client": "npm run build --prefix landing_page"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.5"
+  }
+}

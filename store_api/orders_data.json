@@ -1,0 +1,808 @@
+[
+  {
+    "id": "WS-020086",
+    "createdAt": "2026-09-16T13:57:00.087Z",
+    "customerName": "Navaneetha Krishnan",
+    "phoneNumber": "9384828771",
+    "email": "",
+    "address": {
+      "line1": "Flat 3B Pearl Bay Apts, ECR Road, Chennai 600041",
+      "city": "",
+      "state": "",
+      "pincode": "600041"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 2499,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "pay_1789567020087",
+    "paymentStatus": "REFUNDED",
+    "orderStatus": "CANCELLED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-020086",
+      "16/9/2026, 7:27:00 pm",
+      "Navaneetha Krishnan",
+      "9384828771",
+      "Flat 3B Pearl Bay Apts, ECR Road, Chennai 600041,  - 600041",
+      "600041",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x1",
+      1,
+      "₹2499",
+      "pay_1789567020087",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation | Cancelled by user on WhatsApp (Refund: rfd_simulated_1789567027524)",
+    "updatedAt": "2026-09-16T13:57:07.524Z"
+  },
+  {
+    "id": "WS-454538",
+    "createdAt": "2026-09-16T12:50:53.120Z",
+    "customerName": "Naveen",
+    "phoneNumber": "9080224672",
+    "email": "",
+    "address": {
+      "line1": "sri ganesh apartment pollachi 642001",
+      "city": "",
+      "state": "",
+      "pincode": "642001"
+    },
+    "items": [
+      {
+        "productId": "ws-sc-06",
+        "name": "Scallop Shell Trinket Duo (Pastel Pink & Sand)",
+        "sku": "WS-SC-06",
+        "price": 999,
+        "quantity": 1,
+        "customNote": ""
+      },
+      {
+        "productId": "ws-td-03",
+        "name": "Gilded Pearl Oyster Trinket Dish",
+        "sku": "WS-TD-03",
+        "price": 649,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 1648,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-2DBT5XD",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-454538",
+      "16/9/2026, 6:20:53 pm",
+      "Naveen",
+      "9080224672",
+      "sri ganesh apartment pollachi 642001,  - 642001",
+      "642001",
+      "Scallop Shell Trinket Duo (Pastel Pink & Sand) (WS-SC-06) x1, Gilded Pearl Oyster Trinket Dish (WS-TD-03) x1",
+      2,
+      "₹1648",
+      "PAY-2DBT5XD",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-16T12:51:17.422Z"
+  },
+  {
+    "id": "WS-577254",
+    "createdAt": "2026-09-15T18:54:22.487Z",
+    "customerName": "Rohan Varma",
+    "phoneNumber": "sim-171543",
+    "email": "",
+    "address": {
+      "line1": "12/A Ocean Breeze Villa, Miramar, Goa - 403001",
+      "city": "",
+      "state": "",
+      "pincode": "403001"
+    },
+    "items": [
+      {
+        "productId": "ws-cd-02",
+        "name": "Spiral Conch Sea Salt & Sage Candle",
+        "sku": "WS-CD-02",
+        "price": 899,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 899,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-1HNGO47",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-577254",
+      "16/9/2026, 12:24:22 am",
+      "Rohan Varma",
+      "sim-171543",
+      "12/A Ocean Breeze Villa, Miramar, Goa - 403001,  - 403001",
+      "403001",
+      "Spiral Conch Sea Salt & Sage Candle (WS-CD-02) x1",
+      1,
+      "₹899",
+      "PAY-1HNGO47",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T18:54:22.622Z"
+  },
+  {
+    "id": "WS-316680",
+    "createdAt": "2026-09-15T18:47:54.407Z",
+    "customerName": "Divya Nair",
+    "phoneNumber": "9876543210",
+    "email": "",
+    "address": {
+      "line1": "Villa 4, Coastal Green, ECR Road, Chennai 600041",
+      "city": "",
+      "state": "",
+      "pincode": "600041"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 1,
+        "customNote": ""
+      },
+      {
+        "productId": "ws-cd-02",
+        "name": "Spiral Conch Sea Salt & Sage Candle",
+        "sku": "WS-CD-02",
+        "price": 899,
+        "quantity": 2,
+        "customNote": ""
+      },
+      {
+        "productId": "ws-td-03",
+        "name": "Gilded Pearl Oyster Trinket Dish",
+        "sku": "WS-TD-03",
+        "price": 649,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 4946,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-PRLG00U",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-316680",
+      "16/9/2026, 12:17:54 am",
+      "Divya Nair",
+      "9876543210",
+      "Villa 4, Coastal Green, ECR Road, Chennai 600041,  - 600041",
+      "600041",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x1, Spiral Conch Sea Salt & Sage Candle (WS-CD-02) x2, Gilded Pearl Oyster Trinket Dish (WS-TD-03) x1",
+      4,
+      "₹4946",
+      "PAY-PRLG00U",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T18:47:54.601Z"
+  },
+  {
+    "id": "WS-323691",
+    "createdAt": "2026-09-15T18:17:44.494Z",
+    "customerName": "Narmadha",
+    "phoneNumber": "9876544321",
+    "email": "",
+    "address": {
+      "line1": "madurai medical college, 655567",
+      "city": "",
+      "state": "",
+      "pincode": "655567"
+    },
+    "items": [
+      {
+        "productId": "ws-td-03",
+        "name": "Gilded Pearl Oyster Trinket Dish",
+        "sku": "WS-TD-03",
+        "price": 649,
+        "quantity": 3,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 1947,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-ELHIJWE",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-323691",
+      "15/9/2026, 11:47:44 pm",
+      "Narmadha",
+      "9876544321",
+      "madurai medical college, 655567,  - 655567",
+      "655567",
+      "Gilded Pearl Oyster Trinket Dish (WS-TD-03) x3",
+      3,
+      "₹1947",
+      "PAY-ELHIJWE",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T18:17:55.315Z"
+  },
+  {
+    "id": "WS-983248",
+    "createdAt": "2026-09-15T18:06:54.542Z",
+    "customerName": "Naveen Kumar",
+    "phoneNumber": "9876543210",
+    "email": "",
+    "address": {
+      "line1": "12 Lotus Street, Adyar, Chennai 600020",
+      "city": "",
+      "state": "",
+      "pincode": "600020"
+    },
+    "items": [
+      {
+        "productId": "ws-lp-04",
+        "name": "Capiz & Mother-of-Pearl Glow Lamp",
+        "sku": "WS-LP-04",
+        "price": 3299,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 3299,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-G9NMVR0",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-983248",
+      "15/9/2026, 11:36:54 pm",
+      "Naveen Kumar",
+      "9876543210",
+      "12 Lotus Street, Adyar, Chennai 600020,  - 600020",
+      "600020",
+      "Capiz & Mother-of-Pearl Glow Lamp (WS-LP-04) x1",
+      1,
+      "₹3299",
+      "PAY-G9NMVR0",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T18:06:54.682Z"
+  },
+  {
+    "id": "WS-420691",
+    "createdAt": "2026-09-15T18:02:55.809Z",
+    "customerName": "Naveen ki",
+    "phoneNumber": "9876543210",
+    "email": "",
+    "address": {
+      "line1": "iit housing colony kr puram banglore 642991",
+      "city": "",
+      "state": "",
+      "pincode": "642991"
+    },
+    "items": [
+      {
+        "productId": "ws-cd-02",
+        "name": "Spiral Conch Sea Salt & Sage Candle",
+        "sku": "WS-CD-02",
+        "price": 899,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 899,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-SIDNDPA",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-420691",
+      "15/9/2026, 11:32:55 pm",
+      "Naveen ki",
+      "9876543210",
+      "iit housing colony kr puram banglore 642991,  - 642991",
+      "642991",
+      "Spiral Conch Sea Salt & Sage Candle (WS-CD-02) x1",
+      1,
+      "₹899",
+      "PAY-SIDNDPA",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T18:02:56.643Z"
+  },
+  {
+    "id": "WS-974398",
+    "createdAt": "2026-09-15T17:48:28.216Z",
+    "customerName": "sara",
+    "phoneNumber": "7604906945",
+    "email": "",
+    "address": {
+      "line1": "35, Kottampatti_Kerla Samajam to Chinnampalayam Road, Mullai Nagar, Pollachi, Tamil Nadu 642002",
+      "city": "",
+      "state": "",
+      "pincode": "642002"
+    },
+    "items": [
+      {
+        "productId": "ws-lp-04",
+        "name": "Capiz & Mother-of-Pearl Glow Lamp",
+        "sku": "WS-LP-04",
+        "price": 3299,
+        "quantity": 2,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 6598,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-WFKGYY7",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-974398",
+      "15/9/2026, 11:18:28 pm",
+      "sara",
+      "7604906945",
+      "35, Kottampatti_Kerla Samajam to Chinnampalayam Road, Mullai Nagar, Pollachi, Tamil Nadu 642002,  - 642002",
+      "642002",
+      "Capiz & Mother-of-Pearl Glow Lamp (WS-LP-04) x2",
+      2,
+      "₹6598",
+      "PAY-WFKGYY7",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T17:48:28.343Z"
+  },
+  {
+    "id": "WS-659821",
+    "createdAt": "2026-09-15T17:33:04.686Z",
+    "customerName": "Naveen",
+    "phoneNumber": "919384828771",
+    "email": "",
+    "address": {
+      "line1": "Slv bhavish terrain kr puram bangalore 560016",
+      "city": "",
+      "state": "",
+      "pincode": "560016"
+    },
+    "items": [
+      {
+        "productId": "ws-sc-06",
+        "name": "Scallop Shell Trinket Duo (Pastel Pink & Sand)",
+        "sku": "WS-SC-06",
+        "price": 999,
+        "quantity": 2,
+        "customNote": "2 gift wrap with quotes of lovely gift from lala"
+      }
+    ],
+    "totalAmount": 1998,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-SI7AFD2",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-659821",
+      "15/9/2026, 11:03:04 pm",
+      "Naveen",
+      "919384828771",
+      "Slv bhavish terrain kr puram bangalore 560016,  - 560016",
+      "560016",
+      "Scallop Shell Trinket Duo (Pastel Pink & Sand) (WS-SC-06) x2",
+      2,
+      "₹1998",
+      "PAY-SI7AFD2",
+      "PAID",
+      "CONFIRMED",
+      "2 gift wrap with quotes of lovely gift from lala"
+    ],
+    "notes": "2 gift wrap with quotes of lovely gift from lala",
+    "updatedAt": "2026-09-15T17:33:27.866Z"
+  },
+  {
+    "id": "WS-948311",
+    "createdAt": "2026-09-15T17:21:17.793Z",
+    "customerName": "Kavya Iyer",
+    "phoneNumber": "919384828771",
+    "email": "",
+    "address": {
+      "line1": "Villa 18, Coral Reef Enclave, ECR Road, Chennai 600041",
+      "city": "",
+      "state": "",
+      "pincode": "600041"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 2499,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-2NWLWJN",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-948311",
+      "15/9/2026, 10:51:17 pm",
+      "Kavya Iyer",
+      "919384828771",
+      "Villa 18, Coral Reef Enclave, ECR Road, Chennai 600041,  - 600041",
+      "600041",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x1",
+      1,
+      "₹2499",
+      "PAY-2NWLWJN",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T17:21:20.097Z"
+  },
+  {
+    "id": "WS-651484",
+    "createdAt": "2026-09-15T17:17:07.650Z",
+    "customerName": "Naveen",
+    "phoneNumber": "919384828771",
+    "email": "",
+    "address": {
+      "line1": "25/1 apartment, pollachi, 642001",
+      "city": "",
+      "state": "",
+      "pincode": "642001"
+    },
+    "items": [
+      {
+        "productId": "ws-td-03",
+        "name": "Gilded Pearl Oyster Trinket Dish",
+        "sku": "WS-TD-03",
+        "price": 649,
+        "quantity": 2,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 1298,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-XA8DX6H",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-651484",
+      "15/9/2026, 10:47:07 pm",
+      "Naveen",
+      "919384828771",
+      "25/1 apartment, pollachi, 642001,  - 642001",
+      "642001",
+      "Gilded Pearl Oyster Trinket Dish (WS-TD-03) x2",
+      2,
+      "₹1298",
+      "PAY-XA8DX6H",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T17:17:15.624Z"
+  },
+  {
+    "id": "WS-673050",
+    "createdAt": "2026-09-15T17:03:57.734Z",
+    "customerName": "Naveen",
+    "phoneNumber": "919384828771",
+    "email": "",
+    "address": {
+      "line1": "Flat 402, Ocean Breeze Apts, Beach Road, Chennai 600004",
+      "city": "",
+      "state": "",
+      "pincode": "600004"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 2,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 4998,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-CATO67B",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-673050",
+      "15/9/2026, 10:33:57 pm",
+      "Naveen",
+      "919384828771",
+      "Flat 402, Ocean Breeze Apts, Beach Road, Chennai 600004,  - 600004",
+      "600004",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x2",
+      2,
+      "₹4998",
+      "PAY-CATO67B",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T17:03:58.079Z"
+  },
+  {
+    "id": "WS-101722",
+    "createdAt": "2026-09-15T15:33:14.331Z",
+    "customerName": "Pooja Hegde, +91 91234 56789",
+    "phoneNumber": "test-workflow-999",
+    "email": "",
+    "address": {
+      "line1": "Villa 9, Ocean Palms, Candolim Beach Road, Goa - 403515",
+      "city": "",
+      "state": "",
+      "pincode": "403515"
+    },
+    "items": [
+      {
+        "productId": "ws-lp-04",
+        "name": "Capiz & Mother-of-Pearl Glow Lamp",
+        "sku": "WS-LP-04",
+        "price": 3299,
+        "quantity": 2,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 6598,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-SAZ2B56",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-101722",
+      "15/9/2026, 9:03:14 pm",
+      "Pooja Hegde, +91 91234 56789",
+      "test-workflow-999",
+      "Villa 9, Ocean Palms, Candolim Beach Road, Goa - 403515,  - 403515",
+      "403515",
+      "Capiz & Mother-of-Pearl Glow Lamp (WS-LP-04) x2",
+      2,
+      "₹6598",
+      "PAY-SAZ2B56",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T15:33:14.525Z"
+  },
+  {
+    "id": "WS-562062",
+    "createdAt": "2026-09-15T14:46:02.071Z",
+    "customerName": "Ananya Sharma, +91 98765 43210",
+    "phoneNumber": "sim-380586",
+    "email": "",
+    "address": {
+      "line1": "12/A Ocean Breeze Villa, Miramar, Goa - 403001",
+      "city": "",
+      "state": "",
+      "pincode": "403001"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 2,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 4998,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-3XT6WXP",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-562062",
+      "15/9/2026, 8:16:02 pm",
+      "Ananya Sharma, +91 98765 43210",
+      "sim-380586",
+      "12/A Ocean Breeze Villa, Miramar, Goa - 403001,  - 403001",
+      "403001",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x2",
+      2,
+      "₹4998",
+      "PAY-3XT6WXP",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T14:46:02.958Z"
+  },
+  {
+    "id": "WS-367737",
+    "createdAt": "2026-09-15T07:46:07.738Z",
+    "customerName": "user",
+    "phoneNumber": "sim-447426",
+    "email": "",
+    "address": {
+      "line1": "user address, state, 560016",
+      "city": "",
+      "state": "",
+      "pincode": "560016"
+    },
+    "items": [
+      {
+        "productId": "ws-cd-02",
+        "name": "Spiral Conch Sea Salt & Sage Candle",
+        "sku": "WS-CD-02",
+        "price": 899,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 899,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-DL036VE",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-367737",
+      "15/9/2026, 1:16:07 pm",
+      "user",
+      "sim-447426",
+      "user address, state, 560016,  - 560016",
+      "560016",
+      "Spiral Conch Sea Salt & Sage Candle (WS-CD-02) x1",
+      1,
+      "₹899",
+      "PAY-DL036VE",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T07:46:08.732Z"
+  },
+  {
+    "id": "WS-790157",
+    "createdAt": "2026-09-15T07:36:30.163Z",
+    "customerName": "naveen",
+    "phoneNumber": "sim-957984",
+    "email": "",
+    "address": {
+      "line1": "34/4, ganeshapartment kerala samaj pollachi 642001",
+      "city": "",
+      "state": "",
+      "pincode": "642001"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 2499,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-4JLROOF",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-790157",
+      "15/9/2026, 1:06:30 pm",
+      "naveen",
+      "sim-957984",
+      "34/4, ganeshapartment kerala samaj pollachi 642001,  - 642001",
+      "642001",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x1",
+      1,
+      "₹2499",
+      "PAY-4JLROOF",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T07:36:30.196Z"
+  },
+  {
+    "id": "WS-092158",
+    "createdAt": "2026-09-15T07:24:52.158Z",
+    "customerName": "Ananya Sharma, +91 98765 43210",
+    "phoneNumber": "test-session-001",
+    "email": "",
+    "address": {
+      "line1": "14 Coastal Ridge, Miramar, Goa - 403001",
+      "city": "",
+      "state": "",
+      "pincode": "403001"
+    },
+    "items": [
+      {
+        "productId": "ws-mr-01",
+        "name": "Artisanal Seashell Vanity Mirror",
+        "sku": "WS-MR-01",
+        "price": 2499,
+        "quantity": 1,
+        "customNote": ""
+      }
+    ],
+    "totalAmount": 2499,
+    "paymentMethod": "UPI / Razorpay Verified",
+    "paymentId": "PAY-9CFUPYD",
+    "paymentStatus": "PAID",
+    "orderStatus": "CONFIRMED",
+    "syncedToGoogleSheet": true,
+    "googleSheetRow": [
+      "WS-092158",
+      "15/9/2026, 12:54:52 pm",
+      "Ananya Sharma, +91 98765 43210",
+      "test-session-001",
+      "14 Coastal Ridge, Miramar, Goa - 403001,  - 403001",
+      "403001",
+      "Artisanal Seashell Vanity Mirror (WS-MR-01) x1",
+      1,
+      "₹2499",
+      "PAY-9CFUPYD",
+      "PAID",
+      "CONFIRMED",
+      "Ordered via WhatsApp automation"
+    ],
+    "notes": "Ordered via WhatsApp automation",
+    "updatedAt": "2026-09-15T07:24:52.253Z"
+  }
+]
