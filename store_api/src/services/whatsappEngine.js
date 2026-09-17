@@ -142,6 +142,17 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
     }
   }
 
+  // Quick draft cancellation (user clicks Cancel Order while placing an order)
+  const isDraftCancel = (lower === 'btn_cancel' || lower === 'cancel order' || (lower === 'cancel' && !text.match(/WS-\d+/i))) && session.state !== 'COMPLETED';
+  if (isDraftCancel) {
+    resetSession(sessionId);
+    return {
+      reply: `❌ *Order Cancelled*\n\nYour order request has been cancelled. No payment was charged.\n\nWhenever you'd like to explore our handcrafted seashell treasures again, just type *hi* or *catalog*! 🐚✨`,
+      state: 'IDLE',
+      session: getSession(sessionId)
+    };
+  }
+
   // Cancel order & refund command
   if (lower.startsWith('cancel') || lower === 'refund' || lower.includes('cancel order') || lower.includes('refund order')) {
     const matchedOrderId = text.match(/WS-\d+/i)?.[0]?.toUpperCase() || session.completedOrderId;
@@ -413,7 +424,8 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
           `━━━━━━━━━━━━━━━━━━━━\n` +
           `⚡ _Your order is automatically confirmed in real time the moment payment is completed!_\n` +
           `👉 Or tap *I Have Paid* after finishing payment.\n` +
-          `🔄 *Details wrong?* Tap *Edit Details* to restart!`;
+          `✏️ *Details wrong?* Tap *Edit Details*.\n` +
+          `❌ *Changed mind?* Tap *Cancel Order*.`;
 
         return {
           reply,
@@ -423,7 +435,8 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
           canSimulatePayment: true,
           buttons: [
             { id: 'btn_paid', title: '✅ I Have Paid' },
-            { id: 'btn_back', title: '🔄 Edit Details' }
+            { id: 'btn_edit', title: '✏️ Edit Details' },
+            { id: 'btn_cancel', title: '❌ Cancel Order' }
           ],
           session
         };
@@ -511,7 +524,8 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
         `━━━━━━━━━━━━━━━━━━━━\n` +
         `⚡ _Your order is automatically confirmed in real time the moment payment is completed!_\n` +
         `👉 Or tap *I Have Paid* after finishing payment.\n` +
-        `🔄 *Details wrong?* Tap *Edit Details* to restart!`;
+        `✏️ *Details wrong?* Tap *Edit Details*.\n` +
+        `❌ *Changed mind?* Tap *Cancel Order*.`;
 
       return {
         reply,
@@ -521,18 +535,29 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
         canSimulatePayment: true,
         buttons: [
           { id: 'btn_paid', title: '✅ I Have Paid' },
-          { id: 'btn_back', title: '🔄 Edit Details' }
+          { id: 'btn_edit', title: '✏️ Edit Details' },
+          { id: 'btn_cancel', title: '❌ Cancel Order' }
         ],
         session
       };
     }
 
     case 'AWAIT_PAYMENT': {
-      // Step 5: Check if user clicked BACK/RESTART button OR completed payment
-      const isBackRequest = lower === 'back' || lower === 'edit' || lower === 'change' || 
-                            lower === 'wrong' || lower === 'restart' || lower === 'reset' || 
-                            lower === 'no' || lower === 'cancel' || lower === 'btn_back' ||
-                            lower.includes('edit details');
+      // Step 5: Check if user clicked CANCEL ORDER, EDIT DETAILS, or completed payment
+      const isCancelRequest = lower === 'btn_cancel' || lower === 'cancel' || lower === 'cancel order';
+      if (isCancelRequest) {
+        resetSession(sessionId);
+        return {
+          reply: `❌ *Order Cancelled*\n\nYour order request has been cancelled. No payment was charged.\n\nWhenever you'd like to explore our handcrafted seashell treasures again, just type *hi* or *catalog*! 🐚✨`,
+          state: 'IDLE',
+          session: getSession(sessionId)
+        };
+      }
+
+      const isBackRequest = lower === 'btn_edit' || lower === 'btn_back' || lower === 'back' || 
+                            lower === 'edit' || lower === 'change' || lower === 'wrong' || 
+                            lower === 'restart' || lower === 'reset' || lower.includes('edit details') ||
+                            lower.includes('change details');
 
       if (isBackRequest) {
         // Reset customer details to allow fresh input
@@ -577,7 +602,7 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
               `━━━━━━━━━━━━━━━━━━━━\n` +
               `We checked Razorpay, but haven't received confirmation for your order yet.\n\n` +
               `👉 *Please tap here to complete payment:*\n${linkUrl}\n\n` +
-              `_(If money was already deducted from your account, it may take 1-2 minutes for the banking network to settle. Tap *Check Again* once done)_`;
+              `_(Tap *Check Again* after finishing payment, or choose *Edit Details* / *Cancel Order* below)_`;
 
             return {
               reply: notPaidReply,
@@ -586,7 +611,8 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
               canSimulatePayment: true,
               buttons: [
                 { id: 'btn_paid', title: '🔄 Check Again' },
-                { id: 'btn_back', title: '🔄 Edit Details' }
+                { id: 'btn_edit', title: '✏️ Edit Details' },
+                { id: 'btn_cancel', title: '❌ Cancel Order' }
               ],
               session
             };
@@ -666,13 +692,15 @@ export const processIncomingMessage = async (sessionId, userMessage, initialProd
           reply: `✨ Your order (₹${totalAmount}) is awaiting payment!\n\n` +
             `💳 *Pay Securely (UPI/Cards):* ${activeLink}\n\n` +
             `👉 Tap *I Have Paid* or reply *PAID* after payment.\n` +
-            `🔄 *Details wrong?* Tap *Edit Details* to restart from the beginning.`,
+            `✏️ *Details wrong?* Tap *Edit Details* to restart.\n` +
+            `❌ *Changed mind?* Tap *Cancel Order*.`,
           state: 'AWAIT_PAYMENT',
           paymentLink: activeLink,
           canSimulatePayment: true,
           buttons: [
             { id: 'btn_paid', title: '✅ I Have Paid' },
-            { id: 'btn_back', title: '🔄 Edit Details' }
+            { id: 'btn_edit', title: '✏️ Edit Details' },
+            { id: 'btn_cancel', title: '❌ Cancel Order' }
           ],
           session
         };
