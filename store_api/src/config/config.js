@@ -29,7 +29,7 @@ export const config = {
     webhookUrl: process.env.GOOGLE_SHEET_WEBHOOK_URL || '',
   },
   mongoUri: process.env.MONGODB_URI || 'mongodb+srv://tinydevsolutions_db_user:whatsapp_api_26@whatsappapi.ttv1x8k.mongodb.net/?appName=whatsappApi',
-  publicUrl: process.env.PUBLIC_URL || 'http://localhost:5000',
+  publicUrl: process.env.PUBLIC_URL || 'https://whatshells-api.onrender.com',
   frontendUrl: process.env.FRONTEND_URL || 'https://landingpage-snowy-six.vercel.app',
   razorpay: {
     keyId: process.env.RAZORPAY_KEY_ID || '',

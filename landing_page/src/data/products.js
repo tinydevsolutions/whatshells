@@ -10,7 +10,7 @@ import imgVase from '../assets/products/images (7).jpeg';
 export const STORE_PHONE = '15556559552';
 export const INSTAGRAM_HANDLE = '@whatshells';
 export const INSTAGRAM_URL = 'https://instagram.com/whatshells';
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://whatshells-api.onrender.com/api';
 
 export const products = [
   {
