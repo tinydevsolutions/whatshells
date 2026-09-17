@@ -1,5 +1,6 @@
 import { getSession } from '../services/whatsappEngine.js';
 import { products } from '../data/products.js';
+import { config } from '../config/config.js';
 
 export const renderCheckoutPage = (req, res) => {
   const { sessionId = 'default-session' } = req.query;
@@ -116,7 +117,7 @@ export const renderCheckoutPage = (req, res) => {
       </div>
 
       <div class="pt-4">
-        <a href="http://localhost:5173/" class="inline-block px-6 py-2.5 rounded-full bg-[#173847] text-white text-xs font-semibold hover:bg-[#20495c] transition-colors">
+        <a href="${config.frontendUrl}" class="inline-block px-6 py-2.5 rounded-full bg-[#173847] text-white text-xs font-semibold hover:bg-[#20495c] transition-colors">
           Return to Whatshells Boutique
         </a>
       </div>
