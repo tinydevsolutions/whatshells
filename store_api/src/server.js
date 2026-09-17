@@ -22,6 +22,30 @@ app.use(express.json({
 }));
 app.use(express.urlencoded({ extended: true }));
 
+// In-memory debug logger to inspect live webhook delivery remotely
+export const recentLogs = [];
+const originalLog = console.log;
+const originalError = console.error;
+const originalWarn = console.warn;
+
+console.log = (...args) => {
+  recentLogs.unshift({ time: new Date().toISOString(), type: 'LOG', msg: args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') });
+  if (recentLogs.length > 50) recentLogs.pop();
+  originalLog(...args);
+};
+
+console.error = (...args) => {
+  recentLogs.unshift({ time: new Date().toISOString(), type: 'ERROR', msg: args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') });
+  if (recentLogs.length > 50) recentLogs.pop();
+  originalError(...args);
+};
+
+console.warn = (...args) => {
+  recentLogs.unshift({ time: new Date().toISOString(), type: 'WARN', msg: args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') });
+  if (recentLogs.length > 50) recentLogs.pop();
+  originalWarn(...args);
+};
+
 // Request logger
 app.use((req, res, next) => {
   console.log(`[${new Date().toLocaleTimeString()}] ${req.method} ${req.originalUrl}`);
@@ -43,6 +67,21 @@ app.get('/pay', renderCheckoutPage);
 
 // API Routes
 app.use('/api', apiRoutes);
+
+// Live Debug Endpoint
+app.get('/api/debug/logs', (req, res) => {
+  res.json({
+    whatsappConfig: {
+      hasAccessToken: Boolean(config.whatsapp.accessToken && config.whatsapp.accessToken.length > 20),
+      tokenLength: config.whatsapp.accessToken ? config.whatsapp.accessToken.length : 0,
+      tokenPrefix: config.whatsapp.accessToken ? config.whatsapp.accessToken.substring(0, 15) : 'NONE',
+      phoneNumberId: config.whatsapp.phoneNumberId,
+      verifyToken: config.whatsapp.verifyToken
+    },
+    totalLogs: recentLogs.length,
+    logs: recentLogs
+  });
+});
 
 // Root greeting
 app.get('/', (req, res) => {
