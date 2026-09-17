@@ -18,6 +18,7 @@ router.get('/health', (req, res) => {
     whatsappPhone: config.whatsappPhone,
     phoneNumberId: config.whatsapp.phoneNumberId,
     businessAccountId: config.whatsapp.businessAccountId,
+    whatsappTokenConfigured: Boolean(config.whatsapp.accessToken && config.whatsapp.accessToken.length > 20),
     googleSheetsConnected: Boolean(config.google.sheetId || config.google.webhookUrl),
     razorpayConfigured: Boolean(config.razorpay.keyId),
     timestamp: new Date().toISOString()
